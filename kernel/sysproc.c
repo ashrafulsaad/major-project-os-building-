@@ -110,3 +110,9 @@ sys_uptime(void)
   release(&tickslock);
   return xticks;
 }
+uint64
+sys_hello(void)
+{
+    printk("Hello from the xv6 kernel!\n");
+    return 0;
+}

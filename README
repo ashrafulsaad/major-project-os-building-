@@ -1,3 +1,32 @@
+xv6 Operating Systems Learning Project
+=======================================
+
+This repository contains the MIT xv6 operating system source code that our
+three-member group is using to learn how operating systems work. We are
+studying the xv6 code, building it, and exploring its design by making small
+educational changes such as adding system calls and related user programs.
+
+This is our learning and experimentation repository based on MIT xv6; it is
+not an official MIT repository. Our goal is to understand operating-system
+concepts through reading, testing, debugging, and discussing our changes.
+
+TEAM GIT WORKFLOW
+
+1. Clone the repository and create a branch for your task:
+	git clone https://github.com/ashrafulsaad/major-project-os-building-.git
+	git checkout -b add-your-feature
+2. Make and test your changes locally.
+3. Commit focused changes with a clear message:
+	git add <files>
+	git commit -m "Add the new system call"
+4. Push your branch and open a pull request for review:
+	git push -u origin add-your-feature
+5. The other group members and, when appropriate, our instructor can review
+	the pull request before it is merged into main.
+
+Group members may also request collaborator access to the repository. Please
+use a separate branch for each task and avoid committing directly to main.
+
 xv6 is a re-implementation of Dennis Ritchie's and Ken Thompson's Unix
 Version 6 (v6).  xv6 loosely follows the structure and style of v6,
 but is implemented for a modern RISC-V multiprocessor using ANSI C.
