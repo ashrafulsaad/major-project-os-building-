@@ -170,6 +170,9 @@ int             copyin(pagetable_t, uint64, char *, uint64, uint64);
 int             copyinstr(pagetable_t, uint64, char *, uint64, uint64);
 int             ismapped(pagetable_t, uint64);
 uint64          vmfault(pagetable_t, uint64, uint64, int);
+//Add this declaration near the other memory-management functions:
+uint64          freemem(void);
+
 
 // plic.c
 void            plicinit(void);

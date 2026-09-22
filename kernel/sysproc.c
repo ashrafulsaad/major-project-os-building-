@@ -1,3 +1,4 @@
+
 #include "types.h"
 #include "riscv.h"
 #include "defs.h"
@@ -115,4 +116,16 @@ sys_hello(void)
 {
     printk("Hello from the xv6 kernel!\n");
     return 0;
+}
+
+//memory information to  syscall
+
+uint64
+sys_sysinfo(void)
+{
+  uint64 memory = freemem();
+
+  printk("Free memory: %ld bytes\n", memory);
+
+  return 0;
 }
