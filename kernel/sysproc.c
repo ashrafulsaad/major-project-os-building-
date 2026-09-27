@@ -114,8 +114,8 @@ sys_uptime(void)
 uint64
 sys_hello(void)
 {
-    printk("Hello from the xv6 kernel!\n");
-    return 0;
+  printk("Hello from the xv6 kernel!\n");
+  return 0;
 }
 
 //memory information to  syscall
