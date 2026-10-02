@@ -474,6 +474,8 @@ vmfault(pagetable_t pagetable, uint64 psz, uint64 va, int read)
     kfree((void *)mem);
     return 0;
   }
+   printk("demand paging: mapped va=0x%lx\n", va);
+
   return mem;
 }
 
